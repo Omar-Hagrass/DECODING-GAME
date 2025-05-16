@@ -84,4 +84,4 @@ Specify the model in `generate_tables.py` and run it to produce the output table
 
 ### Note
 
-* The main algorithm for the decoding game can be found in `model_utils.py`.
+* The main algorithm for the decoding game can be found in `src/model_utils.py`.
