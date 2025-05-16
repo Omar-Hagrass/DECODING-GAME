@@ -1,15 +1,23 @@
 # Decoding Game Experiments Repository
 
+This repository contains the code used to run the experiments presented in the following paper:
+
+Sijin Chen, Omar Hagrass, and Jason M. Klusowski, **Decoding Game: On Minimax Optimality of Heuristic Text Generation Strategies**, *International Conference on Learning Representations (ICLR)*, 2025.
+
 This repository is adapted from the MAUVE experiments repository:
 
 * [MAUVE Repository](https://github.com/krishnap25/mauve-experiments)
+
+## Implementation of the Main Algorithm
+
+The main algorithm for the decoding game can be found in `src/model_utils.py`.
 
 ## Supported Models
 
 You can run the experiments using any of the following models:
 
 * GPT-2 Series: `"gpt2"`, `"gpt2-large"`, `"gpt2-medium"`, `"gpt2-xl"`
-* Meta Llama: `"meta-llama/Llama-2-7b-hf"`
+* Meta Llama-2-7B: `"meta-llama/Llama-2-7b-hf"`
 * EleutherAI GPT-J: `"EleutherAI/gpt-j-6B"`
 
 ## Steps to Run the Experiments
@@ -81,7 +89,3 @@ bash calculate_other.sh
 ### 7. Generate Result Tables
 
 Specify the model in `generate_tables.py` and run it to produce the output tables.
-
-### Note
-
-* The main algorithm for the decoding game can be found in `src/model_utils.py`.
